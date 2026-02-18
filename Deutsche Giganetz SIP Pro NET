@@ -1,0 +1,63 @@
+{
+  "name": "Deuutsche Giganetz SIP Pro NET",
+  "description": "SIP template for Deutsche Giganetz ProNet.",
+  "tests": [
+    {
+      "name": "DGN-ProNet",
+      "tester": "Madlax85",
+      "working": true,
+      "doubleNat": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "type",
+      "value": "auth"
+    },
+    {
+      "name": "auth_type",
+      "value": "userpass"
+    },
+    {
+      "name": "password",
+      "description": "Passwords are some Numbers at my Setup. You find it when you connect the WebUI of your default router, provided with your initial setup/connection."
+    },
+    {
+      "name": "username",
+      "description": "Username starts with tXXXXXXX at my Setup. You find it when you connect the the WebUI of your default router, provided with your initial setup/connection."
+    },
+    {
+      "name": "realm",
+      "value": "tel.dgn.digital"
+    },
+    {
+      "name": "retry-seconds",
+      "value": "30"
+    },
+    {
+      "name": "expire-seconds",
+      "value": "600"
+    },
+    {
+      "name": "register",
+      "value": "true"
+    }
+  ],
+  "aclWhitelist": [
+    {
+      "host": "185.39.86.104",
+      "cidr": "0"
+    }
+  ],
+  "settings": {
+    "staticSignalingPort": false
+  },
+  "implementation": {
+    "submitted": false,
+    "implemented": false
+  },
+  "meta": {
+    "author": "Madlax85",
+    "source": "https://ubiquiti-networks-forum.de/board/thread/12781-voip-unifi-talk-deutsche-giganetz/?postID=161087#post161087"
+  }
+}
